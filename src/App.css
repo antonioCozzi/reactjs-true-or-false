@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+.App {
+  padding: 0 50px 50px 50px;
+  margin: 60px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  background: #b2bfe9;
+  text-align: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-shadow: 0px 5px #96a8e1, 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.question {
+  background: #8a9ede;
+  padding: 5px 75px 5px 75px;
+  border-radius: 6px;
+  font-family: "Raleway", "Segoe UI", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 50px;
+  font-style: italic;
+  width: auto;
+  height: auto;
+  margin: 20px;
+  box-shadow: 0px 5px #6f87d6, 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.button-container {
+  padding: 20px;
+}
+.button-true {
+  margin: 20px;
+  border-radius: 50%;
+  background-color: #00c400;
+  width: 130px;
+  height: 130px;
+  color: white;
+  font-family: "Raleway", "Segoe UI", serif;
+  font-size: 26px;
+  font-weight: 700;
+  border-style: none;
+  box-shadow: 0px 5px #22ac00, 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.button-true:active {
+  background-color: #00a000;
+  box-shadow: 0px 5px #1a8100;
+  color: #ededed;
+}
+.button-false {
+  margin: 20px;
+  border-radius: 50%;
+  background-color: #e70032;
+  width: 130px;
+  height: 130px;
+  color: white;
+  font-family: "Raleway", "Segoe UI", serif;
+  font-size: 26px;
+  font-weight: 700;
+  border-style: none;
+  box-shadow: 0px 5px #bd0029, 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.button-false:active {
+  background-color: #c3002a;
+  box-shadow: 0px 5px #81002b;
+  color: #ededed;
+}
+.button-restart {
+  margin: 20px;
+  border-radius: 50%;
+  background-color: #ff7b00;
+  width: 130px;
+  height: 130px;
+  color: white;
+  font-family: "Raleway", "Segoe UI", serif;
+  font-size: 26px;
+  font-weight: 700;
+  border-style: none;
+  box-shadow: 0px 5px #db6a00, 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.button-restart:active {
+  background-color: #b85900;
+  box-shadow: 0px 5px #cc6200;
+  color: #ededed;
+}
+.points {
+  font-family: "Raleway", "Segoe UI", serif;
+  font-size: 40px;
+  color: #0079be;
+}
+.points .number {
+  font-size: 50px;
+  color: #00598b;
+  font-weight: 700;
+}
+.finish {
+  font-size: 100px;
+  font-family: "Raleway", "Segoe UI", serif;
+  font-style: bold;
+  color: #ff7b00;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.13);
+}

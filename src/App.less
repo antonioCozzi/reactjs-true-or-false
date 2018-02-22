@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@bg-color: rgb(178, 191, 233);
+@main-font: "Raleway", "Segoe UI", serif;
+@font-weight: 700;
+@true-color: rgb(0, 196, 0);
+@false-color: rgb(231, 0, 50);
+@points-color: rgb(0, 121, 190);
+@finish-color: rgb(255, 123, 0);
+@button-size: 130px;
+@font-color: white;
+@button-font-size: 26px;
+@question-font-size: 50px;
+@points-font-size: 40px;
+@finish-font: 100px;
+
+.App {
+  padding: 0 50px 50px 50px;
+  margin: 60px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  background: @bg-color;
+  text-align: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-shadow: 0px 5px darken(@bg-color, 7%), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.question {
+  background: darken(@bg-color, 10%);
+  padding: 5px 75px 5px 75px;
+  border-radius: 6px;
+  font-family: @main-font;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: @font-color;
+  font-size: @question-font-size;
+  font-style: italic;
+  width: auto;
+  height: auto;
+  margin: 20px;
+  box-shadow: 0px 5px darken(@bg-color, 17%), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.button-container {
+  padding: 20px;
+}
+
+.button-true {
+  margin: 20px;
+  border-radius: 50%;
+  background-color: @true-color;
+  width: @button-size;
+  height: @button-size;
+  color: @font-color;
+  font-family: @main-font;
+  font-size: @button-font-size;
+  font-weight: @font-weight;
+  border-style: none;
+  box-shadow: 0px 5px #22ac00, 0 10px 10px rgba(0, 0, 0, 0.22);
+  &:active {
+    background-color: darken(@true-color, 7%);
+    box-shadow: 0px 5px #1a8100;
+    color: darken(@font-color, 7%);
+  }
+}
+
+.button-false {
+  margin: 20px;
+  border-radius: 50%;
+  background-color: @false-color;
+  width: @button-size;
+  height: @button-size;
+  color: @font-color;
+  font-family: @main-font;
+  font-size: @button-font-size;
+  font-weight: @font-weight;
+  border-style: none;
+  box-shadow: 0px 5px #bd0029, 0 10px 10px rgba(0, 0, 0, 0.22);
+  &:active {
+    background-color: darken(@false-color, 7%);
+    box-shadow: 0px 5px #81002b;
+    color: darken(@font-color, 7%);
+  }
+}
+
+.button-restart {
+  margin: 20px;
+  border-radius: 50%;
+  background-color: @finish-color;
+  width: @button-size;
+  height: @button-size;
+  color: @font-color;
+  font-family: @main-font;
+  font-size: @button-font-size;
+  font-weight: @font-weight;
+  border-style: none;
+  box-shadow: 0px 5px darken(@finish-color, 7%), 0 10px 10px rgba(0, 0, 0, 0.22);
+  &:active {
+    background-color: darken(@finish-color, 14%);
+    box-shadow: 0px 5px darken(@finish-color, 10%);
+    color: darken(@font-color, 7%);
+  }
+}
+
+.points {
+  font-family: @main-font;
+  font-size: @points-font-size;
+  color: @points-color;
+  .number {
+    font-size: @points-font-size + 10px;
+    color: darken(@points-color, 10%);
+    font-weight: @font-weight;
+  }
+}
+
+.finish {
+  font-size: @finish-font;
+  font-family: @main-font;
+  font-style: bold;
+  color: @finish-color;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.13);
+}
