@@ -20,6 +20,7 @@ class App extends Component {
   }
 
   nextQuestion(answer) {
+    this.setState({ gameStatus: "" });
     answer === questions[this.state.current].answer
       ? this.setState({
           current: this.state.current + 1,
@@ -29,7 +30,11 @@ class App extends Component {
   }
 
   restartGame() {
-    this.setState({ gameStatus: "restart" });
+    this.setState({
+      current: 0,
+      points: 0,
+      gameStatus: "restart"
+    });
   }
 
   render() {
